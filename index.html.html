@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="hope.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+        </div>Hope-Rays Foundation | Lighting the Path Forward
+    </title>
+
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Colors & Layout */
+        header {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.9rem;
+            font-weight: bold;
+            color: #f39c12;
+            /* Golden Ray Color */
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('data:image/jpeg;base64,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') no-repeat center center/cover;
+            height: 80vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #f39c12;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #e67e22;
+        }
+
+        /* Sections */
+        .container {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .card {
+            padding: 30px;
+            border-radius: 10px;
+            background: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo"><img src="logo.png"
+                style="height: 180px; vertical-align: middle; margin-right: 10px;">Hope-Ray Foundation</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#mission">Our Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Empowering Lives, Restoring Hope</h1>
+        <p>A small ray of hope can chase away the darkest shadows.</p>
+        <a href="#contact" class="btn">Get Involved</a>
+    </section>
+
+    <section id="about" class="container">
+        <h2>Who We Are</h2>
+        <p>Hope Ray Foundation is dedicated to providing support, resources and a helping hand to those in need. We
+            believe that everyone deserves a better life.</p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Community</h3>
+                <p>Building sustainable infrastructure and local support networks.</p>
+                <p>Ensuring we suppoert each other to obtain the basic needs and enhance a sustainable life</p>
+            </div>
+            <div class="card">
+                <h3>Healthcare</h3>
+                <p>Ensuring access to basic medical care and mental health resources.</p>
+            </div>
+            <div class="card">
+                <h3>Education</h3>
+                <p>Providing school supplies to orphans and children in underserved communities.</p>
+            </div>
+        </div>
+    </section>
+    <section id="mission" class="container" style="background: #fff;">
+        <h2>How You Can Get Involved</h2>
+        <p>There are many ways to support the Hope Rays Foundation. Choose the path that fits you best.</p>
+
+        <div class="grid">
+            <div class="card">
+                <h3 style="color: #f39c12;">Volunteer</h3>
+                <p>Join our team on the ground. We are always looking for support towards pushing our agendas</p>,
+                <p>Identify vulnareble family,widows or Orphans </p>
+                <P>Provide basic support at of the best possible way</p>
+                <p>Ensure that we create a community worth for a better life for all</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #f39c12;">Partner With Us</h3>
+                <p>Are you a business or organization?</p>
+                <p>Let’s collaborate on projects to create a bigger impact.</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #f39c12;">Spread the Word</h3>
+                <p>Follow us on social media and share our stories. Awareness is the first step toward change.</p>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <section id="contact" class="container" style="background: #f39c12; color: white;">
+        <h2>Join Our Mission</h2>
+        <p>Whether you want to volunteer, donate, or partner with us, we'd love to hear from you.</p>
+        <p><strong>Email:</strong> hoperayfoundtn@gmail.com</p>
+        <p>Phone Number: 0117738160</p>
+
+        <br>
+        <a href="#" class="btn" style="background: white; color: #f39c12;">Donate Now</a>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2026 Hope Rays Foundation. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
